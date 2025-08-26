@@ -1,6 +1,6 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 :root {
-    --primary-color: #0d6efd;
+    --primary-color: #287cfb;
     --secondary-color: lightgray;
     --black-color:rgba(18, 18, 18, 1);
     --box-shadow-dark: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -11,6 +11,9 @@ body{
     max-width: 100vw;
     overflow-x: hidden;
     scroll-behavior: smooth;
+}
+.btn{
+    background-color: var(--primary-color) !important;
 }
 /* screen split */
 .first-section{
@@ -37,9 +40,9 @@ body{
     background-color: transparent !important;
     border: none !important;
 }
-.btn{
-    margin-top: 2px;
+#about{
     color: white !important;
+    background-color: transparent !important;
 }
 .dropdown-1, .dropdown-2, .dropdown-3 ,.dropdown-4,.dropdown-5{
     display: none;
@@ -552,9 +555,17 @@ footer p,footer a{
         color: var(--black-color)!important;
         margin-left: 12px;
     }
-        .navbar.navbar-fixed .nav-item a, .navbar.navbar-fixed .dropdown-1, .navbar.navbar-fixed .dropdown-2, .navbar.navbar-fixed .dropdown-3, 
-        .navbar.navbar-fixed .dropdown-4, .navbar.navbar-fixed .dropdown-5
-         {
+    #about{
+        background: transparent !important;
+        color: var(--black-color) !important;
+    }
+    .navbar.navbar-fixed #about{
+        background: transparent !important;
+        color: white !important;
+    }
+    .navbar.navbar-fixed .nav-item a, .navbar.navbar-fixed .dropdown-1, .navbar.navbar-fixed .dropdown-2, .navbar.navbar-fixed .dropdown-3, 
+    .navbar.navbar-fixed .dropdown-4, .navbar.navbar-fixed .dropdown-5
+    {
         color: white !important;
         margin-left: 12px;
 
@@ -562,9 +573,6 @@ footer p,footer a{
     .navbar.navbar-fixed .btn{
         color: white !important;
     }
-    .btn{
-        color: var(--black-color) !important;
-        }
     .dropdown-1, .dropdown-2, .dropdown-3 ,.dropdown-4,.dropdown-5{
         width: max-content !important;
     }
@@ -572,6 +580,7 @@ footer p,footer a{
         width: 180% !important;
         margin-left: -80px;
     }
+    
 }
 @media screen and (max-width: 768px) {
     .navbar-brand {
@@ -581,6 +590,14 @@ footer p,footer a{
         color: var(--black-color)!important;
                 margin-left: 12px;
 
+    }
+    #about{
+        background: transparent !important;
+        color: var(--black-color) !important;
+    }
+    .navbar.navbar-fixed #about{
+        background: transparent !important;
+        color: white !important;
     }
     .navbar.navbar-fixed .nav-item a, .navbar.navbar-fixed .dropdown-1, .navbar.navbar-fixed .dropdown-2, .navbar.navbar-fixed .dropdown-3, 
     .navbar.navbar-fixed .dropdown-4, .navbar.navbar-fixed .dropdown-5
@@ -592,16 +609,16 @@ footer p,footer a{
     .navbar.navbar-fixed .btn{
         color: white !important;
     }
-    .btn{
-        color: var(--black-color) !important;
-    }
-        .first-section::before {
+    .first-section::before {
     clip-path: polygon(60% 0%, 100% 0, 100% 100%, 20% 100%);
 }
     .portfolio-image{
     width: 200% !important;
     margin-left: -80px;
 }
+    .tech li {
+        font-size: 100px !important;
+    }
 }
 @media screen and (max-width: 576px) {
     .navbar-brand {
@@ -610,18 +627,30 @@ footer p,footer a{
     .nav-item a {
         color: var(--black-color)!important;
                 margin-left: 12px;
+                background: transparent !important;
     }
-        .navbar.navbar-fixed .nav-item a, .navbar.navbar-fixed .dropdown-1, .navbar.navbar-fixed .dropdown-2, .navbar.navbar-fixed .dropdown-3,
-        .navbar.navbar-fixed .dropdown-4, .navbar.navbar-fixed .dropdown-5
+    #about{
+        background: transparent !important;
+        color: var(--black-color) !important;
+    }
+    .navbar.navbar-fixed #about{
+        background: transparent !important;
+        color: white !important;
+    }
+    .navbar.navbar-fixed .nav-item a, .navbar.navbar-fixed .dropdown-1, .navbar.navbar-fixed .dropdown-2, .navbar.navbar-fixed .dropdown-3,
+    .navbar.navbar-fixed .dropdown-4, .navbar.navbar-fixed .dropdown-5
          {
         color: white !important;
-                margin-left: 12px;
+        margin-left: 12px;
     }
     .navbar.navbar-fixed .btn{
         color: white !important;
     }
+    .tech li {
+        font-size: 80px !important;
+    }
 
-        .portfolio-image{
+    .portfolio-image{
     width: 250% !important;
     margin-left: 10px;
 }
