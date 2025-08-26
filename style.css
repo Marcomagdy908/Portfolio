@@ -12,8 +12,14 @@ body{
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
 .btn{
     background-color: var(--primary-color) !important;
+}.btn:hover{
+    background-color: rgb(33, 67, 169) !important;
 }
 /* screen split */
 .first-section{
